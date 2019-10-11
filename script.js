@@ -18,3 +18,9 @@ $('.remove').on('click', () => {
   tasks.pop()
   $('ul').append(tasks);
 })
+
+// clear all
+$('.clear').on('click', () => {
+  tasks = [];
+  $('li').remove();
+})
