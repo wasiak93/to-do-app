@@ -6,9 +6,9 @@ $('form').on('submit', (event) => {
   const inputValue = $('.write').val();
   const date = new Date($.now());
   const formatted = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-  const taskElement = `<li><span class="number">Tasks number ${tasks.length + 1}${inputValue ? ":" : ""} ${inputValue} </span><span class="time">${formatted}</span></li>`;
-  $('ul').append(taskElement);
-  tasks.push(taskElement)
+  const task = `<li><span class="number">Tasks number ${tasks.length + 1}${inputValue ? ":" : ""} ${inputValue} </span><span class="time">${formatted}</span></li>`;
+  $('ul').append(task);
+  tasks.push(task)
   $('.write').val('');
   localStorage.setItem('todo', JSON.stringify(tasks));
 })
@@ -17,7 +17,6 @@ $('form').on('submit', (event) => {
 $('.remove').on('click', () => {
   $('li').remove();
   tasks.pop()
-  console.log(tasks)
   $('ul').append(tasks);
   localStorage.setItem('todo', JSON.stringify(tasks));
 })
