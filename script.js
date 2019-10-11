@@ -11,3 +11,10 @@ $('form').on('submit', (event) => {
   tasks.push(task)
   $('.write').val('');
 })
+
+// remove last task
+$('.remove').on('click', () => {
+  $('li').remove();
+  tasks.pop()
+  $('ul').append(tasks);
+})
