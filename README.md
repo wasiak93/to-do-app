@@ -4,7 +4,7 @@ Recruitment task
 
 App created in JQuery. Responsive(grid and flexbox). Icon on mobile home screen and icon on title bar.
 
-![img/screen2.png](img/screen2.png)
+![img/screen 2.png](img/screen2.png)
 
 ![img/screen1.png](img/screen1.png)
 
