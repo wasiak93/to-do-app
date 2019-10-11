@@ -8,7 +8,7 @@ App created in JQuery. Responsive(grid and flexbox). Icon on mobile home screen 
 
 ![img/screen1.png](img/screen1.png)
 
-![img/screen3.png](img/screen3.png)
+![img/screen3.PNG](img/screen3.PNG)
 
 
 
