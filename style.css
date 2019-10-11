@@ -15,3 +15,189 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 40%;
+  /* border-bottom: 2px solid #81B5A3; */
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 140px;
+  background: #81B5A3;
+  border: none;
+  border-radius: 8px;
+  font-size: 26px;
+  color: white;
+  margin: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  outline: none;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #80C285;
+}
+
+input {
+  width: 150px;
+  padding: 8px 5px;
+  margin: 5px 5px 5px 2px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: darkslategrey;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.list {
+  font-size: 14px;
+  word-break: break-word;
+  color: darkslategrey;
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 5px;
+}
+
+.time {
+  color: grey;
+  font-size: 10px;
+}
+
+@media(min-width:360px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  button {
+    margin: 10px 10px 5px 10px;
+  }
+
+  input {
+    width: 175px;
+    margin: 10px 0px 5px -15px;
+  }
+}
+
+@media(min-width:420px) {
+  button {
+    width: 170px;
+    margin: 5px 0px 5px 30px;
+  }
+
+  input {
+    width: 210px;
+    margin: 5px -15px 5px 5px;
+  }
+
+  .buttons-container {
+    padding: 10px;
+  }
+
+  .list {
+    max-width: 400px;
+    font-size: 16px;
+  }
+}
+
+@media(min-width:787px) {
+  button {
+    width: 155px;
+  }
+
+  .list {
+    width: 100%;
+    max-width: 760px;
+    font-size: 18px;
+  }
+}
+
+@media(min-width:840px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  button {
+    width: 170px;
+    margin: 5px 5px 5px 28px;
+    font-size: 32px;
+  }
+
+  input {
+    width: 180px;
+    margin: 5px 0 5px 30px;
+    font-size: 20px;
+    padding: 10px 5px;
+  }
+
+  .buttons-container {
+    padding: 10px;
+  }
+
+  li {
+    gap: 10px;
+  }
+
+  .time {
+    font-size: 12px;
+    ;
+  }
+
+  .list {
+    max-width: 780px;
+  }
+}
+
+@media(min-width:1024px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  input {
+    width: 320px;
+  }
+
+  .buttons-container {
+    padding: 30px;
+  }
+
+  .list {
+    max-width: 960px;
+  }
+}
