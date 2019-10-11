@@ -1,4 +1,4 @@
-let tasks = $.makeArray();
+let tasks;
 
 // add task
 $('form').on('submit', (event) => {
@@ -6,7 +6,6 @@ $('form').on('submit', (event) => {
   const inputValue = $('.write').val();
   const date = new Date($.now());
   const formatted = date.getHours().toString().padStart(2, 0) + ":" + date.getMinutes().toString().padStart(2, 0) + ":" + date.getSeconds().toString().padStart(2, 0);
-  console.log(formatted);
   const task = `<li><span class="number">Tasks number ${tasks.length + 1}${inputValue ? ":" : ""} ${inputValue} </span><span class="time">${formatted}</span></li>`;
   $('ul').append(task);
   tasks.push(task)
@@ -31,6 +30,6 @@ $('.clear').on('click', () => {
 
 // draw list if saved in localStorage
 window.onload = () => {
-  tasks = JSON.parse(localStorage.getItem('todo'));
+  tasks = JSON.parse(localStorage.getItem('todo')) || [];
   $('ul').append(tasks);
 }
