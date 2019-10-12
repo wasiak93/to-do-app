@@ -42,12 +42,16 @@ button {
   margin: 5px;
   font-family: 'Gloria Hallelujah', cursive;
   outline: none;
-  transition-duration: 0.4s;
+  transition: cursor 0s, background .4s, box-shadow 0s;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #80C285;
+  background: #80C285;
+}
+
+button:active {
+  box-shadow: 0 0 5px 5px white
 }
 
 input {
